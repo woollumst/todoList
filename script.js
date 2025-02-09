@@ -5,11 +5,15 @@ const todoList = document.getElementById("todo-list");
 addBtn.addEventListener("click", () => {
     if (input.value.trim() !== "") {
         const li = document.createElement("li");
-        li.innerHTML = `${input.value} <button onclick="removeTask(this)">Remove</button>`;
+        li.innerHTML = `${input.value} <button onclick="completeTask(this)">Complete</button><button onclick="removeTask(this)">Remove</button>`;
         todoList.appendChild(li);
         input.value = "";
     }
 });
+
+function completeTask(button) {
+    //add strikethrough for complete?
+}
 
 function removeTask(button) {
     button.parentElement.remove();
