@@ -13,6 +13,7 @@ addBtn.addEventListener("click", () => {
 
 function completeTask(button) {
     //add strikethrough for complete?
+    //button.parentElement ? add completed/strikethrough class?
 }
 
 function removeTask(button) {
