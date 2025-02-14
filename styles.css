@@ -21,3 +21,6 @@ li {
 button {
     cursor: pointer;
 }
+.completed {
+    text-decoration: strikethrough;
+}
